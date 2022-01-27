@@ -1,0 +1,89 @@
+:root{
+    --primary: #1e5de8;
+    --primaryLight: #6c8aff;
+    --primaryDark: #002e9b;
+    --secondary: #161414;
+    --secondaryLight: #3c3a3a;
+    --secondaryDark: #000000;
+}
+
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+body {
+    font-family: 'Noto Serif', serif;
+    margin: 30px;
+    line-height: 1.6;
+    text-align: justify;
+    width: 90%;
+    font-weight: 500;
+    color: var(--secondary);
+}
+
+.menu {
+    text-align: center;
+    font-weight: 700;
+}
+
+.menu li {
+    display: inline;
+    font-family: 'Noto Sans', sans-serif;
+    margin: 10px;
+}
+
+a:link {
+    color: var(--secondary);
+    text-decoration: none;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+a:visited {
+    color: var(--secondary);
+    font-family: 'Noto Sans', sans-serif;
+}
+
+a:hover {
+    color: var(--primary);
+    transition: .3s;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+#foto-perfil {
+    width: 200px;
+    border-radius: 50%;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--primary);  
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+h3 {
+    font-family: 'Noto Sans', sans-serif;
+    margin-top: 30px;
+}
+
+strong {
+    color: var(--primaryDark);
+    font-weight: 600;
+}
+
+.habilidades-lista {
+    list-style-type: none;
+    line-height: 2;
+}
+
+.skill-importante {
+    color: var(--primaryDark);
+    font-weight: 700;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.skill-normal {
+    font-family: 'Noto Sans', sans-serif;
+}
