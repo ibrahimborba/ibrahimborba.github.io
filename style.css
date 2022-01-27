@@ -1,7 +1,7 @@
 :root{
-    --primary: #1e5de8;
+    --primary: #2055c7;
     --primaryLight: #6c8aff;
-    --primaryDark: #002e9b;
+    --primaryDark: #0735a0;
     --secondary: #161414;
     --secondaryLight: #3c3a3a;
     --secondaryDark: #000000;
@@ -14,13 +14,13 @@
 }
 
 body {
-    font-family: 'Noto Serif', serif;
+    font-family: 'Noto Sans', sans-serif;
     margin: 30px;
     line-height: 1.6;
     text-align: justify;
     width: 90%;
     font-weight: 500;
-    color: var(--secondary);
+    color: var(--secondaryLight);
 }
 
 .menu {
@@ -35,13 +35,13 @@ body {
 }
 
 a:link {
-    color: var(--secondary);
+    color: var(--secondaryLight);
     text-decoration: none;
     font-family: 'Noto Sans', sans-serif;
 }
 
 a:visited {
-    color: var(--secondary);
+    color: var(--secondaryLight);
     font-family: 'Noto Sans', sans-serif;
 }
 
@@ -79,7 +79,7 @@ strong {
 }
 
 .skill-importante {
-    color: var(--primaryDark);
+    color: var(--primary);
     font-weight: 700;
     font-family: 'Noto Sans', sans-serif;
 }
