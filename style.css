@@ -1,10 +1,10 @@
 :root{
-    --primary: #2055c7;
-    --primaryLight: #6c8aff;
-    --primaryDark: #0735a0;
-    --secondary: #161414;
-    --secondaryLight: #3c3a3a;
-    --secondaryDark: #000000;
+    --primary: #3d5afe;
+    --primaryLight: #8187ff;
+    --primaryDark: #0031ca;
+    --secondary: #424242;
+    --secondaryLight: #6d6d6d;
+    --secondaryDark: #1b1b1b;
 }
 
 *{ 
@@ -20,7 +20,7 @@ body {
     text-align: justify;
     width: 90%;
     font-weight: 500;
-    color: var(--secondaryLight);
+    color: var(--secondary);
 }
 
 .menu {
@@ -30,41 +30,40 @@ body {
 
 .menu li {
     display: inline;
-    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     margin: 10px;
 }
 
 a:link {
-    color: var(--secondaryLight);
+    color: var(--secondary);
     text-decoration: none;
-    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 a:visited {
-    color: var(--secondaryLight);
+    color: var(--secondary);
     font-family: 'Noto Sans', sans-serif;
 }
 
 a:hover {
     color: var(--primary);
     transition: .3s;
-    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 #foto-perfil {
     width: 200px;
-    border-radius: 50%;
 }
 
 h1 {
     font-family: 'Montserrat', sans-serif;
-    color: var(--primary);  
+    color: var(--primaryDark);  
     font-size: 20px;
     letter-spacing: 2px;
 }
 
 h3 {
-    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     margin-top: 30px;
 }
 
