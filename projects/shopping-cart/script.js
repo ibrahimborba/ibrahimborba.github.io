@@ -71,8 +71,10 @@ function getSkuFromProductItem(item) {
 }
 
 const addProductItem = async (search) => {
+  createLoadingMessage();
   const itemsSection = document.querySelector('.items');
   const productsResponse = await fetchProducts(search);
+  removeLoadingMessage();
   productsResponse.results.forEach((elem) => {
     const { id: sku, title: name, thumbnail: image, price} = elem;
     itemsSection.appendChild(createProductItemElement({ sku, name, image, price}));
@@ -184,10 +186,8 @@ sortOptions.addEventListener('change', sortByPrice);
 
 //
 const initialRenderization = async () => {
-  createLoadingMessage();
   await addProductItem('computador');
   addProductToCart();
-  removeLoadingMessage();
   cartItemsList.innerHTML = getSavedCartItems();
   const cartItem = document.querySelectorAll('.cart__item');
   cartItem.forEach((item) => item.addEventListener('click', cartItemClickListener));
